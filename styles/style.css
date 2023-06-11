@@ -17,33 +17,33 @@
 
 @font-face {
     font-family: Brutal ExtraBold;
-    src: url("/font/BrutalType-ExtraBold.ttf");
+    src: url(../font/BrutalType-ExtraBold.ttf);
 
 }
 
 @font-face {
     font-family: Brutal Bold;
-    src: url("/font/BrutalType-Bold.ttf");
+    src: url(../font/BrutalType-Bold.ttf);
 }
 
 @font-face {
     font-family: Brutal Medium;
-    src: url("/font/BrutalType-Medium.ttf");
+    src: url(../font/BrutalType-Medium.ttf);
 }
 
 @font-face {
     font-family: Brutal Regular;
-    src: url("/font/BrutalType.ttf");
+    src: url(../font/BrutalType.ttf);
 }
 
 @font-face {
     font-family: Brutal Light;
-    src: url("/font/BrutalType-Light.ttf");
+    src: url(../font/BrutalType-Light.ttf);
 }
 
 @font-face {
     font-family: Roboto Mono;
-    src: url("/font/RobotoMono-VariableFont_wght.ttf");
+    src: url(../font/RobotoMono-VariableFont_wght.ttf);
 }
 
 .unselectable {
