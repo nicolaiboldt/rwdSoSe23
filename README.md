@@ -10,4 +10,5 @@ responsive Landingpage zur Darstellung <br>
 und Bewerbung eines geometrischen Körpers in 
 einem frei wählbaren Markenkontext.<br>
 
-## GitHub Pages: 
+## GitHub Pages:
+[https://nicolaiboldt.github.io/rwdSoSe23/](https://nicolaiboldt.github.io/rwdSoSe23/)
