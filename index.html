@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Octa Hedron</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="/scripts/script.js" defer></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+</head>
+
+<body id="body">
+    <header id="navbar">
+        <img src="/img/neues logo.png" alt="" id="h_logo">
+        <div class="h_bu">
+            <button class="primary" id="h_button">Jetzt bestellen</button>
+        </div>
+    </header>
+    <main>
+        <div class="splash">
+            <div class="claim unselectable">
+                <p>Der weltweit einzigartigste und fortschrittlichste
+                    <span class="nobr">geometrische Körper</span>
+                </p>
+            </div>
+            <a href="#second"><button class="secondary" id="claim_bu">Erfahren Sie mehr</button></a>
+            <div class="octa">
+                <img src="/img/octahedron.png">
+                <div class="dst"></div>
+            </div>
+        </div>
+        <div id="second">
+            <div class="interactive">
+                <div class="slider">
+                    <img src="/img/games.webp">
+                </div>
+                <div class="slider">
+                    <img src="/img/film.jpg">
+                </div>
+                <div class="slider">
+                    <img src="/img/automobil.webp">
+                </div>
+                <div class="slider">
+                    <img src="/img/shows.webp">
+                </div>
+                <div class="slider">
+                    <img src="/img/more.webp">
+                </div>
+                <div class="timeline">
+                    <ul id="ue-homepage-timeline">
+                        <li class="industry active games">
+                            <button id="games" class="timeline-btn">
+                                <span class="dot"></span>
+                                <span class="label">
+                                    <h4 class="heading h4">
+                                        <span>Spiele</span>
+                                    </h4>
+                                </span>
+                            </button>
+                            <span class="linewrapper dontAnimate ">
+                                <span class="progress"></span>
+                                <span class="track"></span></span>
+                        </li>
+                        <li class="industry film">
+                            <button id="film" class="timeline-btn">
+                                <span class="dot"></span>
+                                <span class="label ">
+                                    <h4 class="heading h4">
+                                        <span>Film und Fernsehen</span>
+                                    </h4>
+                                </span></button>
+                            <span class="linewrapper dontAnimate ">
+                                <span class="progress"></span>
+                                <span class="track">
+                                </span>
+                            </span>
+                        </li>
+                        <li class="industry automotive">
+                            <button id="automotive" class="  timeline-btn"><span class="dot"></span>
+                                <span class="label">
+                                    <h4 class="sc-jTrPJq jMSLfT heading h4  loc-de ">
+                                        <span class="sc-qRumB dXiDyC ue-rich-text typography-rich-text loc-de">Automobil
+                                            und Transport</span>
+                                    </h4>
+                                </span></button><span class="linewrapper dontAnimate "><span class="progress"></span>
+                                <span class="track"></span></span>
+                        </li>
+                        <li class="industry broadcast">
+                            <button id="broadcast" class="  timeline-btn"><span class="dot"></span>
+                                <span class="label">
+                                    <h4 class="heading h4">
+                                        <span>Übertragungen und Live-Veranstaltungen</span>
+                                    </h4>
+                                </span></button><span class="linewrapper dontAnimate "><span
+                                    class="progress"></span><span class="track"></span></span>
+                        </li>
+                        <li class="industry more">
+                            <button id="more" class="  timeline-btn"><span class="dot"></span><span class="label ">
+                                    <h4 class="heading h4">
+                                        <span>Mehr Anwendungen</span>
+                                    </h4>
+                                </span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="content">
+                    <div class="contentContainer">
+                        <div class="cgridLeft"></div>
+                        <div class="cgridText">
+                            <h2 class="cHeading active">
+                                <span>Eine Geometrie<br>der Möglichkeiten</span>
+                            </h2>
+                            <h2 class="cHeading">
+                                <span>Die Perfektion<br>des Szenenbilds</span>
+                            </h2>
+                            <h2 class="cHeading">
+                                <span>Eine Plattform,<br>um weiter zu kommen</span>
+                            </h2>
+                            <h2 class="cHeading">
+                                <span>Die Show stehlen</span>
+                            </h2>
+                            <h2 class="cHeading">
+                                <span>Eleganz für alle</span>
+                            </h2>
+                        </div>
+                        <div class="cgridMiddle"></div>
+                        <div class="cgridText">
+                            <div class="cDescription active">
+                                <span>Erreichen Sie die nächste Stufe mit der einzigartigsten Geometrie der
+                                    Welt.<br>Acht Flächen, sechs Ecken, 12 Kanten - unendlich Spielspaß für die ganze
+                                    Familie.</span>
+                            </div>
+                            <div class="cDescription">
+                                <span>Film description.</span>
+                            </div>
+                            <div class="cDescription">
+                                <span>Automobil description.</span>
+                            </div>
+                            <div class="cDescription">
+                                <span>Live event description.</span>
+                            </div>
+                            <div class="cDescription">
+                                <span>More description.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sContainer">
+                <div class="sContent even">
+                    <div class="sImg ratio-rect with-gradient">
+                        <div class="ratio-keeper">
+                            <img loading="lazy" src="/img/games.webp">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4 class="sText">Spiele</h4>
+                        <div class="spacer"></div>
+                        <h2 class="sHeading a">
+                            Eine Geometrie der Möglichkeiten
+                        </h2>
+                    </div>
+                </div>
+                <div class="spacer"></div>
+                <div class="sContent odd">
+                    <div class="sImg ratio-rect with-gradient">
+                        <div class="ratio-keeper">
+                            <img loading="lazy" src="/img/film.jpg">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4 class="sText">Film und Fernsehen</h4>
+                        <div class="spacer"></div>
+                        <h2 class="sHeading b">
+                            Die Perfektion des Szenenbilds
+                        </h2>
+                    </div>
+                </div>
+                <div class="spacer"></div>
+                <div class="sContent even">
+                    <div class="sImg ratio-rect with-gradient">
+                        <div class="ratio-keeper">
+                            <img loading="lazy" src="/img/automobil.webp">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4 class="sText">Automobil und Transport</h4>
+                        <div class="spacer"></div>
+                        <h2 class="sHeading c">
+                            Eine Plattform, um weiter zu kommen
+                        </h2>
+                    </div>
+                </div>
+                <div class="spacer"></div>
+                <div class="sContent odd">
+                    <div class="sImg ratio-rect with-gradient">
+                        <div class="ratio-keeper">
+                            <img loading="lazy" src="/img/shows.webp">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4 class="sText">Übertragungen und Live-Veranstaltungen</h4>
+                        <div class="spacer"></div>
+                        <h2 class="sHeading d">
+                            Die Show stehlen
+                        </h2>
+                    </div>
+                </div>
+                <div class="spacer"></div>
+                <div class="sContent even">
+                    <div class="sImg ratio-rect with-gradient">
+                        <div class="ratio-keeper">
+                            <img loading="lazy" src="/img/more.webp">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4 class="sText">Mehr Anwendungen</h4>
+                        <div class="spacer"></div>
+                        <h2 class="sHeading">
+                            Eleganz für alle
+                        </h2>
+                    </div>
+                </div>
+                <div class="spacer"></div>
+            </div>
+        </div>
+        <div id="third" class="unselectable">
+            <div class="tSpacer"></div>
+            <div class="tContainer">
+                <div class="tContent">
+                    <div class="grid1">
+                        <div class="firstCol">
+                            <h2 class="tHeading">Kostenloses Probemodell - enthält alle Funktionen!</h2>
+                            <div class="tSSpacer"></div>
+                            <p class="tDesc">Das Octahedron wird mit allen Funktionen und vollem Zugriff auf das
+                                Innenleben
+                                geliefert und ist sofort einsatzbereit.</p>
+                        </div>
+                        <div class="tSSpacer"></div>
+                    </div>
+
+                    <div class="grid2">
+                        <div class="grid-flex">
+                            <div class="grid-item">
+                                <div class="col">
+
+                                    <p class="tSmall">Octa Hedron kaufen</p>
+                                    <div class="tDiv"></div>
+                                    <div class="card">
+                                        <h3>Starten Sie kostenlos!</h3>
+                                        <div class="tDiv2"></div>
+                                        <p class="tTiny">Das Octahedron kann kostenlos als Probemodell zur Ansicht
+                                            bestellt
+                                            werden,
+                                            sodass Sie in Ruhe sicherstellen können, dass es in Ihren individuellen
+                                            Nutzungskontext
+                                            passt. Wenn Sie es behalten wollen, geht Ihre Mitgliedschaft automatisch in
+                                            ein
+                                            Abonnement
+                                            für 13,99 € pro Monat über.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="col">
+                                    <p class="tSmall">Kontaktieren sie uns</p>
+                                    <div class="tDiv"></div>
+                                    <div class="card">
+                                        <h3>Andere Kaufoptionen</h3>
+                                        <div class="tDiv2"></div>
+                                        <p class="tTiny">Suchen Sie nach Premium-Support, privaten Schulungen,
+                                            individuellen
+                                            Nutzungsbedingungen oder einem direkten Draht zu Octa Hedron? Sprechen
+                                            Sie
+                                            mit
+                                            uns
+                                            über
+                                            eine Octahedron-Enterprise-Program-Lizenz oder eine individuelle Lösung.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tSpacerN"></div>
+            <div class="nContainer">
+                <div class="nFiller"></div>
+                <div class="nBox">
+                    <div class="nContent">
+                        <div class="nFlex">
+                            <div class="nItem2">
+                                <h4>Newsletter</h4>
+                                <div class="tSSpacer"></div>
+                            </div>
+                            <div class="nItem2">
+                                <h3 class="nHeading">Erhalten Sie aktuelle Informationen über Geometrie-Innovationen und
+                                    die
+                                    neusten Usecases des Octahedrons</h3>
+                                <div class="nSpacer"></div>
+                            </div>
+                            <div class="nItem3">
+                                <div class="nInFlex">
+                                    <input type="text" class="nInput" placeholder="E-Mail-Adresse">
+                                </div>
+                                <button class="primary nButton">Abonnieren</button>
+                            </div>
+                            <div class="tSSpacer"></div>
+                            <div class="nItem4">
+                                <p class="nDisclaimer">Durch das Übersenden Ihrer Informationen stimmen Sie zu,
+                                    Neuigkeiten, Umfragen und
+                                    besondere Angebote von Octa Hedron zu erhalten.
+                                    <a href="#second">Datenschutzrichtlinien</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="fContent">
+                <div class="fLinkswrap">
+                    <div class="fLinks">
+                        <div class="column">
+                            <span class="fHeading">Für Enwickler</span>
+                            <p>Octa Online Services</p>
+                            <p>Octa Hedron Store</p>
+                            <p>Anleitungen und Whitepapers</p>
+                            <p>Octa Indies</p>
+                        </div>
+                        <div class="column">
+                            <span class="fHeading">Unterstützung</span>
+                            <p>Hilfe erhalten</p>
+                            <p>FAQs</p>
+                            <p>Dokumentation</p>
+                            <p>Probleme</p>
+                            <p>Foren</p>
+                            <p>Roadmap</p>
+                            <p>Eine Frage stellen</p>
+                            <p>Octa Developer Network</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="fDiv">
+                <div class="fCopy">
+                    <p>© 2004-2023, Octa Hedron, Inc. Alle Rechte vorbehalten. Octa und sein Logo sind Octas
+                        Handelsmarken oder registrierte Handelsmarken in den USA und anderen Ländern.</p>
+                </div>
+                <div class="fLegal">
+                    <div class="fMain">
+                        <p>Allgemeine Geschäftsbedingungen</p><p>Datenschutzrichtlinien</p>
+                    </div>
+                    <div class="fLogo">
+                        <img src="/img/logo only.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
