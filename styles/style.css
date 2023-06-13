@@ -1,4 +1,5 @@
 :root {
+
     --clr-darkblue: #1D1931;
     --clr-lightblue: #33A5F5;
     --clr-grey: #A6A7AE;
@@ -6,11 +7,11 @@
     --clr-black: #000000;
     --clr-white: #ffffff;
 
-    --clr-one: rgb(0, 171, 245);
-    --clr-two: rgb(255, 95, 104);
-    --clr-three: #2AE5B2;
-    --clr-four: rgb(182, 101, 233);
-    --clr-five: rgb(0, 171, 245);
+    --clr-one: #a68672;
+    --clr-two: #34c699;
+    --clr-three: rgb(255, 95, 104);
+    --clr-four: #fc961a;
+    --clr-five: rgb(182, 101, 233);
 
     --clr-gradient: radial-gradient(100% 185.14% at 100% 100%, rgb(52, 195, 255) 0%, rgb(51, 142, 238) 100%);
 }
@@ -233,7 +234,7 @@ button {
     max-width: 800px;
     top: 20%;
     right: 15%;
-    transform: translateY(-2%);
+    transform: translateY(-5%);
 }
 
 .dst {
@@ -267,15 +268,73 @@ button {
     margin-bottom: 0.8em;
 }
 
-#claim_bu {
-    position: absolute;
+.claim a {
+    width: fit-content;
+}
+
+.explore_bu {
     width: 700px;
     left: 5%;
     bottom: 34%;
     pointer-events: all;
-    z-index: 100;
     margin: 0px;
     transition: all 0.5s ease 0s;
+    z-index: 100;
+}
+
+#claim_bu {
+    display: block;
+
+}
+
+#free_bu {
+    display: none;
+    position: absolute;
+}
+
+.scro {
+    position: absolute;
+    bottom: 13%;
+    left: 5%;
+    margin-top: 50px;
+}
+
+.scroller {
+    content: "";
+    display: block;
+    position: absolute;
+    animation-name: scroller;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0, 0.42, 0.2, 0.99);
+    animation-play-state: running;
+    width: 1px;
+    height: 0px;
+    background: rgb(255, 255, 255);
+
+}
+
+@keyframes scroller {
+
+    0% {
+        top: 0px;
+        height: 0px;
+    }
+
+    40% {
+        top: 0px;
+        height: 60px;
+    }
+
+    85% {
+        top: 60px;
+        height: 0px;
+    }
+
+    100% {
+        top: 60px;
+        height: 0px;
+    }
 }
 
 #second {
@@ -387,6 +446,7 @@ button {
     box-sizing: border-box;
 }
 
+
 .cHeading {
     font-family: Brutal Light, Open Sans, arial;
     font-weight: 300;
@@ -413,6 +473,7 @@ button {
     opacity: 0%;
     transform: translateY(-80%);
     transition: 0.5s;
+    padding-right: 8%;
 }
 
 .cHeading.active,
@@ -662,21 +723,21 @@ li:hover button .label {
 
 }
 
-.sHeading:hover  {
+.sHeading:hover {
     cursor: pointer;
-    color: var(--clr-lightblue);
+    color: var(--clr-one);
 }
 
 .sHeading.b:hover {
-    color: rgb(255, 95, 104);
+    color: var(--clr-two);
 }
 
 .sHeading.c:hover {
-    color: rgb(42, 229, 179);
+    color: var(--clr-three);
 }
 
 .sHeading.d:hover {
-    color: rgb(182, 101, 233);
+    color: var(--clr-four);
 }
 
 .spacer {
@@ -969,7 +1030,7 @@ li:hover button .label {
 
 }
 
-a {
+.nDisclaimer a {
     color: rgb(0, 87, 217);
     white-space: nowrap;
     background-image: radial-gradient(100% 185.14% at 100% 100%, rgb(52, 195, 255) 0%, rgb(51, 142, 238) 100%);
@@ -1117,10 +1178,6 @@ a:hover {
         transform: translateY(-2%);
     }
 
-    #claim_bu {
-        bottom: 28%;
-    }
-
     .tContainer {
         padding-left: 64px;
         padding-right: 64px;
@@ -1186,12 +1243,21 @@ a:hover {
     }
 
     #claim_bu {
+        display: none;
+    }
+
+    #free_bu {
+        display: block;
         height: fit-content;
         width: fit-content;
         left: 50%;
-        right: 0;
         transform: translateX(-50%);
+        position: absolute;
         bottom: 10%;
+    }
+
+    .scro {
+        display: none;
     }
 
     .timeline li button .label h4 {
