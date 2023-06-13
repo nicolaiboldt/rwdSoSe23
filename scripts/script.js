@@ -73,7 +73,7 @@ window.onscroll = function () {
           color.forEach((li) => li.style.backgroundColor = ("var(--clr-" + clr[i] + ")"));
           // sliders[i-1].style.transform = "translateX(-100%)";
         } else {
-          //width += 0.35;
+          width += 0.35;
           if (i < progArray.length)
             elem.style.width = width + "%";
         }
