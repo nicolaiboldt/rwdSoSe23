@@ -11,15 +11,9 @@
     --clr-two: #34c699;
     --clr-three: #965eff;
     --clr-four: #fc961a;
-    --clr-five: #33A5F5;
+    --clr-five:#69956d;
 
     --clr-gradient: radial-gradient(100% 185.14% at 100% 100%, rgb(52, 195, 255) 0%, rgb(51, 142, 238) 100%);
-}
-
-@font-face {
-    font-family: Brutal ExtraBold;
-    src: url(../font/BrutalType-ExtraBold.ttf);
-
 }
 
 @font-face {
@@ -40,11 +34,6 @@
 @font-face {
     font-family: Brutal Light;
     src: url(../font/BrutalType-Light.ttf);
-}
-
-@font-face {
-    font-family: Roboto Mono;
-    src: url(../font/RobotoMono-VariableFont_wght.ttf);
 }
 
 .unselectable {
