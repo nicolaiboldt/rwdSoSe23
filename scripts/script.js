@@ -46,6 +46,7 @@ window.onscroll = function () {
           i = 0;
           width = 1;
           elem = progArray[i];
+          elem.style.backgroundColor = ("var(--clr-" + clr[i] + ")");
           indArray[i].classList.add("active");
           sliders[i].classList.add("active");
           sliders[sliders.length - 1].classList.remove("active");

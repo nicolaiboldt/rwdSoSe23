@@ -9,9 +9,9 @@
 
     --clr-one: #a68672;
     --clr-two: #34c699;
-    --clr-three: rgb(255, 95, 104);
+    --clr-three: #965eff;
     --clr-four: #fc961a;
-    --clr-five: rgb(182, 101, 233);
+    --clr-five: #33A5F5;
 
     --clr-gradient: radial-gradient(100% 185.14% at 100% 100%, rgb(52, 195, 255) 0%, rgb(51, 142, 238) 100%);
 }
@@ -739,6 +739,10 @@ li:hover button .label {
 .sHeading.d:hover {
     color: var(--clr-four);
 }
+.sHeading.e:hover {
+    color: var(--clr-five);
+}
+
 
 .spacer {
     height: 24px;
