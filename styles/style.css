@@ -217,7 +217,7 @@ button {
     padding: 60px 40px;
     animation: scaleUp 0.5s;
     width: 70%;
-    max-width: 1456px;
+    max-width: 1000px;
     border: var(--clr-gradient) 5px solid;
     box-shadow: 0 0 20px -10px black;
 }
