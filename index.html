@@ -11,13 +11,28 @@
 </head>
 
 <body id="body">
+    <div class="confirmation">
+        <div class="confContent unselectable">
+            <div class="close" onclick="popdown()"></div>
+            <div class="pTop">
+                <h3>Danke für Ihr Interesse!</h3>
+                
+            </div>
+            <p>Leider handelt es sich bei dieser Website um ein Fantasieprodukt, sodass eine Lieferung
+                ausgeschlossen ist.<br>
+                Sie können stattdessen gerne auf dem Github Repository des Erstellers vorbeischauen.
+            </p>
+            <a href="https://github.com/nicolaiboldt/rwdSoSe23"><button class="primary" id="gh_bu">Zum Repository</button></a>
+        </div>
+    </div>
     <header id="navbar">
         <img src="img/neues logo.png" alt="" id="h_logo">
         <div class="h_bu">
-            <button class="primary" id="h_button">Jetzt bestellen</button>
+            <button class="primary" id="h_button" onclick=popup()>Jetzt bestellen</button>
         </div>
     </header>
     <main>
+
         <div class="splash">
             <div class="claim unselectable">
                 <p>Der weltweit einzigartigste und fortschrittlichste
@@ -134,7 +149,8 @@
                                     Welt - unendliche Kreativität für die Gestaltung Ihrer Spielwelt.</span>
                             </div>
                             <div class="cDescription">
-                                <span>Sorgen Sie mithilfe der besonderen Eigenschaften des Octahedrons für ein Szenenbild der Extraklasse.</span>
+                                <span>Sorgen Sie mithilfe der besonderen Eigenschaften des Octahedrons für ein
+                                    Szenenbild der Extraklasse.</span>
                             </div>
                             <div class="cDescription">
                                 <span>Gelangen Sie zu neuen Höchstleistungen mit der innovativsten Form der
@@ -145,7 +161,8 @@
                                     und Eleganz verbindet.</span>
                             </div>
                             <div class="cDescription">
-                                <span>Aus festgefahrenen Formen ausbrechen?<br>Nutzen Sie das Octahedron, um Ihre Vision zu realisieren.</span>
+                                <span>Aus festgefahrenen Formen ausbrechen?<br>Nutzen Sie das Octahedron, um Ihre Vision
+                                    zu realisieren.</span>
                             </div>
                         </div>
                     </div>
@@ -247,7 +264,7 @@
                     <div class="grid2">
                         <div class="grid-flex">
                             <div class="grid-item">
-                                <div class="col">
+                                <div class="col" onclick=popup()>
 
                                     <p class="tSmall">Octa Hedron kaufen</p>
                                     <div class="tDiv"></div>
@@ -267,7 +284,7 @@
                                 </div>
                             </div>
                             <div class="grid-item">
-                                <div class="col">
+                                <div class="col" onclick=popup()>
                                     <p class="tSmall">Kontaktieren sie uns</p>
                                     <div class="tDiv"></div>
                                     <div class="card">
@@ -316,7 +333,7 @@
                                 <p class="nDisclaimer">Durch das Übersenden Ihrer Informationen stimmen Sie zu,
                                     Neuigkeiten, Umfragen und
                                     besondere Angebote von Octa Hedron zu erhalten.
-                                    <a href="#second">Datenschutzrichtlinien</a>
+                                    <a class="underlink" href="#second">Datenschutzrichtlinien</a>
                                 </p>
                             </div>
                         </div>

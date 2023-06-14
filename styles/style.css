@@ -11,7 +11,7 @@
     --clr-two: #34c699;
     --clr-three: #965eff;
     --clr-four: #fc961a;
-    --clr-five:#69956d;
+    --clr-five: #69956d;
 
     --clr-gradient: radial-gradient(100% 185.14% at 100% 100%, rgb(52, 195, 255) 0%, rgb(51, 142, 238) 100%);
 }
@@ -48,6 +48,14 @@
 
 p {
     margin: 0px;
+    font-family: Brutal Regular, Open Sans, arial;
+    font-weight: 400;
+    letter-spacing: 0px;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 0px;
+
+
 }
 
 h3 {
@@ -96,6 +104,7 @@ header {
 
 main {
     width: 100%;
+    position: relative;
 }
 
 .splash {
@@ -175,6 +184,108 @@ button {
     white-space: nowrap;
 }
 
+/* -------------------- class specific --------------------------------------- */
+
+.confirmation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 300;
+    animation: blur 0.5s forwards;
+    
+}
+
+.confirmation.show {
+    display: flex;
+}
+
+
+
+.confContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    gap: 2rem;
+    background: var(--clr-white);
+    margin: 0px 10px;
+    padding: 60px 40px;
+    animation: scaleUp 0.5s;
+    width: 70%;
+    max-width: 1456px;
+    border: var(--clr-gradient) 5px solid;
+    box-shadow: 0 0 20px -10px black;
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes blur {
+    0% {
+        backdrop-filter: blur(0px);
+    }
+
+    100% {
+        backdrop-filter: blur(4px);
+    }
+}
+
+.pTop {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.close {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.3s;
+  }
+  .close:hover {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  .close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #000000;
+  }
+  .close:before {
+    transform: rotate(45deg);
+  }
+  .close:after {
+    transform: rotate(-45deg);
+  }
+
+#gh_bu {
+    padding: 16px;
+    width: 100%;
+    min-width: fit-content;
+    max-width: 300px;
+}
+
+/*      HEADER           */
 
 #h_logo {
     object-fit: contain;
@@ -259,6 +370,7 @@ button {
 
 .claim a {
     width: fit-content;
+    text-decoration: none;
 }
 
 .explore_bu {
@@ -728,6 +840,7 @@ li:hover button .label {
 .sHeading.d:hover {
     color: var(--clr-four);
 }
+
 .sHeading.e:hover {
     color: var(--clr-five);
 }
@@ -1023,7 +1136,7 @@ li:hover button .label {
 
 }
 
-.nDisclaimer a {
+.underlink {
     color: rgb(0, 87, 217);
     white-space: nowrap;
     background-image: radial-gradient(100% 185.14% at 100% 100%, rgb(52, 195, 255) 0%, rgb(51, 142, 238) 100%);
@@ -1036,7 +1149,7 @@ li:hover button .label {
 
 }
 
-a:hover {
+.underlink:hover {
     animation: 0s ease 0s 1 normal none running none;
     background-size: 100% 1.5px;
     color: unset;

@@ -11,6 +11,19 @@ let headings = document.querySelectorAll(".cHeading");
 let descs = document.querySelectorAll(".cDescription");
 let clr = ["one", "two", "three", "four", "five"];
 
+let conf = document.querySelectorAll(".confirmation")[0];
+let body = document.getElementById("body");
+
+function popup() {
+  conf.classList.add("show");
+  body.style.overflow = "hidden";
+}
+
+function popdown() {
+  conf.classList.remove("show");
+  body.removeAttribute("style");
+}
+
 window.onscroll = function () {
   let currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
@@ -121,5 +134,7 @@ for (let f = 0; f < indArray.length; f++) {
     color.forEach((li) => li.style.backgroundColor = ("var(--clr-" + clr[i] + ")"));
   });
 }
+
+
 
 
