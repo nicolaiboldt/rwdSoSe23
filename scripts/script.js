@@ -22,9 +22,11 @@ let validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9
 
 function popup() {
   conf.classList.add("show");
-  document.body.style.overflow = 'hidden';
-  document.body.style.paddingRight = "8px";
-  h_bu.style.paddingRight = "8px";
+  document.body.style.overflowY = 'hidden';
+  if (window.innerWidth > 960) {
+    document.body.style.paddingRight = "8px";
+    h_bu.style.paddingRight = "8px";
+  }
 
 }
 
@@ -52,7 +54,7 @@ function email() {
   if (input.value == "") {
     input.classList.add("error");
     empty.classList.add("show");
-  } else if(input.value.match(validRegex)){
+  } else if (input.value.match(validRegex)) {
     input.value = "";
     input.blur();
     popup();
@@ -61,7 +63,7 @@ function email() {
     wrong.classList.add("show");
   }
 
-  
+
 }
 
 body.addEventListener("keydown", (event) => {
