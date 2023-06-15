@@ -12,17 +12,63 @@ let descs = document.querySelectorAll(".cDescription");
 let clr = ["one", "two", "three", "four", "five"];
 
 let conf = document.querySelectorAll(".confirmation")[0];
-let body = document.getElementById("body");
+let input = document.querySelectorAll("input")[0];
+let n_bu = document.querySelectorAll(".nButton")[0];
+let empty = document.querySelectorAll("#empty")[0];
+let wrong = document.querySelectorAll("#wrong")[0];
+let h_bu = document.querySelectorAll(".h_bu")[0];
+
+let validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
 function popup() {
   conf.classList.add("show");
-  body.style.overflow = "hidden";
+  document.body.style.overflow = 'hidden';
+  document.body.style.paddingRight = "8px";
+  h_bu.style.paddingRight = "8px";
+
 }
 
 function popdown() {
   conf.classList.remove("show");
   body.removeAttribute("style");
+  h_bu.removeAttribute("style");
+  n_bu.style.opacity = "50%";
 }
+
+input.addEventListener("keyup", (event) => {
+  if (event.keyCode == 13) {
+    email();
+  } else if (input.value != "") {
+    n_bu.style.opacity = "100%";
+    input.classList.remove("error");
+    empty.classList.remove("show");
+    wrong.classList.remove("show");
+  } else {
+    n_bu.style.opacity = "50%";
+  }
+});
+
+function email() {
+  if (input.value == "") {
+    input.classList.add("error");
+    empty.classList.add("show");
+  } else if(input.value.match(validRegex)){
+    input.value = "";
+    input.blur();
+    popup();
+  } else {
+    input.classList.add("error");
+    wrong.classList.add("show");
+  }
+
+  
+}
+
+body.addEventListener("keydown", (event) => {
+  if (event.keyCode == 27) {
+    popdown();
+  }
+});
 
 window.onscroll = function () {
   let currentScrollPos = window.pageYOffset;

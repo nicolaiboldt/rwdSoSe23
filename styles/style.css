@@ -83,10 +83,27 @@ html {
     scroll-behavior: smooth;
 }
 
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--clr-grey) var(--clr-darkblue);
+}
+
+*::-webkit-scrollbar {
+    width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--clr-darkblue);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--clr-grey);
+  }
+
 body {
     background: var(--clr-darkblue);
     margin: 0 auto;
-    overflow: hidden auto;
+    overflow-x: hidden;
 }
 
 header {
@@ -196,15 +213,29 @@ button {
     align-items: center;
     justify-content: center;
     z-index: 300;
-    animation: blur 0.5s forwards;
-    
 }
 
 .confirmation.show {
     display: flex;
 }
 
+.blocker {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    animation: fadeIn 0.8s forwards;
+}
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 70%;
+    }
+}
 
 .confContent {
     display: flex;
@@ -280,6 +311,11 @@ button {
 
 #gh_bu {
     padding: 16px;
+    width: 100%     ;
+    
+}
+
+.confContent a {
     width: 100%;
     min-width: fit-content;
     max-width: 300px;
@@ -1118,6 +1154,43 @@ li:hover button .label {
     opacity: 0.7;
 }
 
+.nInput.error {
+    outline: 1px red solid;
+}
+
+.errorCont {
+    height: 0.8rem;
+    position: relative;
+}
+
+.errorP {
+    display: none;
+    position: absolute;
+    top: -2px;
+    margin: 0;
+    font-size: 0.75rem;
+    color: red;
+    text-align: left;
+    animation: dropDown 0.3s forwards;
+    z-index: -1;
+}
+
+.errorP.show {
+    display: block;
+}
+
+@keyframes dropDown {
+    0% {
+        transform: translateY(-50%);
+        opacity: 0%;
+    }
+
+    100% {
+        transform: none;
+        opacity: 100%;
+    }
+}
+
 *:focus {
 
     outline: solid 1px var(--clr-black);
@@ -1125,6 +1198,8 @@ li:hover button .label {
 
 .nButton {
     height: 48px;
+    opacity: 50%;
+    transition: 0.1s;
 }
 
 .nDisclaimer {

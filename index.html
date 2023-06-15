@@ -12,6 +12,7 @@
 
 <body id="body">
     <div class="confirmation">
+        <div class="blocker"></div>
         <div class="confContent unselectable">
             <div class="close" onclick="popdown()"></div>
             <div class="pTop">
@@ -22,11 +23,11 @@
                 ausgeschlossen ist.<br>
                 Sie können stattdessen gerne auf dem Github Repository des Erstellers vorbeischauen.
             </p>
-            <a href="https://github.com/nicolaiboldt/rwdSoSe23"><button class="primary" id="gh_bu">Zum Repository</button></a>
+            <a href="https://github.com/nicolaiboldt/rwdSoSe23" aria-label="zum Github Repository"><button class="primary" id="gh_bu">Zum Repository</button></a>
         </div>
     </div>
     <header id="navbar">
-        <img src="img/neues logo.png" alt="" id="h_logo">
+        <img src="img/neues_logo.webp" alt="header logo" id="h_logo">
         <div class="h_bu">
             <button class="primary" id="h_button" onclick=popup()>Jetzt bestellen</button>
         </div>
@@ -37,31 +38,31 @@
                 <p>Der weltweit einzigartigste und fortschrittlichste
                     <span class="nobr">geometrische Körper</span>
                 </p>
-                <a href="#second"><button class="secondary explore_bu" id="claim_bu">Erfahren Sie mehr</button></a>
+                <a href="#second" aria-label="Mehr erfahren"><button class="secondary explore_bu" id="claim_bu">Erfahren Sie mehr</button></a>
             </div>
             <div class="scro"><span class="scroller"></span></div>
-            <a href="#second"><button class="secondary explore_bu" id="free_bu">Erfahren Sie mehr</button></a>
+            <a href="#second" aria-label="Mehr erfahren"><button class="secondary explore_bu" id="free_bu">Erfahren Sie mehr</button></a>
             <div class="octa">
-                <img src="img/octahedron.png">
+                <img src="img/octahedron.webp" alt="octahedron">
                 <div class="dst"></div>
             </div>
         </div>
         <div id="second">
             <div class="interactive">
                 <div class="slider">
-                    <img src="img/games.jpg">
+                    <img src="img/games.webp" alt="spiele">
                 </div>
                 <div class="slider">
-                    <img src="img/octahedrio.png">
+                    <img src="img/octahedrio.webp" alt="film">
                 </div>
                 <div class="slider">
-                    <img src="img/automobil_octa.png">
+                    <img src="img/automobil.webp" alt="automobil">
                 </div>
                 <div class="slider">
-                    <img src="img/architektur.webp">
+                    <img src="img/architektur.webp" alt="architektur">
                 </div>
                 <div class="slider">
-                    <img src="img/more_octa.webp">
+                    <img src="img/more.webp" alt="mehr">
                 </div>
                 <div class="timeline">
                     <ul id="ue-homepage-timeline">
@@ -171,7 +172,7 @@
                 <div class="sContent even">
                     <div class="sImg ratio-rect with-gradient">
                         <div class="ratio-keeper">
-                            <img loading="lazy" src="img/games.jpg">
+                            <img loading="lazy" src="img/games.webp" alt="spiele">
                         </div>
                     </div>
                     <div class="content">
@@ -186,7 +187,7 @@
                 <div class="sContent odd">
                     <div class="sImg ratio-rect with-gradient">
                         <div class="ratio-keeper">
-                            <img loading="lazy" src="img/octahedrio.png">
+                            <img loading="lazy" src="img/octahedrio.webp" alt="film">
                         </div>
                     </div>
                     <div class="content">
@@ -201,7 +202,7 @@
                 <div class="sContent even">
                     <div class="sImg ratio-rect with-gradient">
                         <div class="ratio-keeper">
-                            <img loading="lazy" src="img/automobil_octa.png">
+                            <img loading="lazy" src="img/automobil.webp" alt="automobil">
                         </div>
                     </div>
                     <div class="content">
@@ -216,7 +217,7 @@
                 <div class="sContent odd">
                     <div class="sImg ratio-rect with-gradient">
                         <div class="ratio-keeper">
-                            <img loading="lazy" src="img/architektur.jpg">
+                            <img loading="lazy" src="img/architektur.webp" alt="architektur">
                         </div>
                     </div>
                     <div class="content">
@@ -231,7 +232,7 @@
                 <div class="sContent even">
                     <div class="sImg ratio-rect with-gradient">
                         <div class="ratio-keeper">
-                            <img loading="lazy" src="img/more_octa.webp">
+                            <img loading="lazy" src="img/more.webp" alt="mehr">
                         </div>
                     </div>
                     <div class="content">
@@ -324,8 +325,12 @@
                             <div class="nItem3">
                                 <div class="nInFlex">
                                     <input type="text" class="nInput" placeholder="E-Mail-Adresse">
+                                    <div class="errorCont">
+                                        <p class="errorP" id="empty">Dieses Feld ist erforderlich</p>
+                                        <p class="errorP" id="wrong">Ungültiges E-Mail-Format</p>
+                                    </div>
                                 </div>
-                                <button class="primary nButton">Abonnieren</button>
+                                <button class="primary nButton" onclick="email()">Abonnieren</button>
                             </div>
                             <div class="tSSpacer"></div>
                             <div class="nItem4">
@@ -375,7 +380,7 @@
                         <p>Datenschutzrichtlinien</p>
                     </div>
                     <div class="fLogo">
-                        <img src="img/logo only.png">
+                        <img src="img/logo_only.webp" alt="logo">
                     </div>
                 </div>
             </div>
