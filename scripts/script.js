@@ -54,12 +54,14 @@ function email() {
   if (input.value == "") {
     input.classList.add("error");
     empty.classList.add("show");
+    wrong.classList.remove("show");
   } else if (input.value.match(validRegex)) {
     input.value = "";
     input.blur();
     popup();
   } else {
     input.classList.add("error");
+    empty.classList.remove("show");
     wrong.classList.add("show");
   }
 
