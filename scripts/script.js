@@ -4,21 +4,21 @@ let width;
 let color;
 let prevScrollpos = window.pageYOffset;
 
-let progArray = document.getElementsByClassName("progress");
-let indArray = document.getElementsByClassName("industry");
-let sliders = document.querySelectorAll(".slider");
-let headings = document.querySelectorAll(".cHeading");
-let descs = document.querySelectorAll(".cDescription");
-let clr = ["one", "two", "three", "four", "five"];
+const progArray = document.getElementsByClassName("progress");
+const indArray = document.getElementsByClassName("industry");
+const sliders = document.querySelectorAll(".slider");
+const headings = document.querySelectorAll(".cHeading");
+const descs = document.querySelectorAll(".cDescription");
+const clr = ["one", "two", "three", "four", "five"];
 
-let conf = document.querySelectorAll(".confirmation")[0];
-let input = document.querySelectorAll("input")[0];
-let n_bu = document.querySelectorAll(".nButton")[0];
-let empty = document.querySelectorAll("#empty")[0];
-let wrong = document.querySelectorAll("#wrong")[0];
-let h_bu = document.querySelectorAll(".h_bu")[0];
+const conf = document.querySelectorAll(".confirmation")[0];
+const input = document.querySelectorAll("input")[0];
+const n_bu = document.querySelectorAll(".nButton")[0];
+const empty = document.querySelectorAll("#empty")[0];
+const wrong = document.querySelectorAll("#wrong")[0];
+const h_bu = document.querySelectorAll(".h_bu")[0];
 
-let validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+const validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
 function popup() {
   conf.classList.add("show");
